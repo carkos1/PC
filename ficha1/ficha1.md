@@ -1,4 +1,4 @@
-X = 50  N = 10
+X = 50  N = 10 || X=30 N=4
 
 	***CONFIG R1
 	ip address 192.168.X.254 255.255.255.0
@@ -27,16 +27,23 @@ ip dhcp
 
 ***CONFIG R1
 
-ip dhcp pool Grupo-10                                 
+ip dhcp pool Grupo-4
 
 dns-server 192.168.50.31 10.254.0.252
 
-domain-name net-10.dei.uc.pt
+domain-name net-4.dei.uc.pt
 
 netbios-name-server 10.1.0.253
 
 lease 0 0 2
 
+
+
+
+
+
+
+    
 ip dhcp pool Grupo-10
 
 host 192.168.50.17 255.255.255.0
